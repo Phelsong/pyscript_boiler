@@ -1,0 +1,11 @@
+packages = [
+]
+version = "0.1.0"
+
+[splashscreen]
+autoclose = true
+
+[[interpreters]]
+src = "/static/pyodide/pyodide.js"
+name = "pyo-23.4"
+lang = "python"

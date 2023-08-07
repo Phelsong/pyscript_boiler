@@ -1,0 +1,35 @@
+<!DOCTYPE pyscript>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ================================================================================== -->
+    <link rel="manifest" href="/static/manifest.json" />
+    <script async src="/static/js/py_worker.js"></script>
+    <script async src="/static/pyscript/pyscript.js"></script>
+    <link async rel="stylesheet" href="/static/public/dashboard.css" />
+    <!-- <script
+            type="text/javascript"
+            src="/static/uikit/js/uikit.min.js"
+        ></script> -->
+    <!-- <link
+            async
+            rel="stylesheet"
+            href="static/uikit/css/uikit.min.css"
+        /> -->
+    <!-- ================================================================================== -->
+    <title>Pyscript-app</title>
+  </head>
+  <body>
+    <!-- ==================================================== -->
+    <py-terminal id="py-out"></py-terminal>
+    <div id="main"></div>
+    <!-- ==================================================== -->
+    <py-config src="/web/py-script.toml"> </py-config>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <py-script src="/web/dashboard.py"> </py-script>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ==================================================== -->
+  </body>
+</html>

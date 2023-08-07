@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pyscript-boiler"
+version = "0.1.0"
+description = "Pyscript + Fast API + Postgres fullstack boiler"
+authors = ["Josh S Wilkinson <joshswilkinson@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "web" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.1"
+psycopg = { extras = ["binary"], version = "^3.1.9" }
+ujson = "^5.8.0"
+uvicorn = "^0.23.2"
+python-multipart = "^0.0.6"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = 'main:server.run'

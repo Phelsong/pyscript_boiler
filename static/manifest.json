@@ -1,0 +1,15 @@
+{
+  "name": "Project",
+  "short_name": "Project",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "/static/icons/temp.png",
+      "type": "image/png",
+      "sizes": "300x300",
+      "purpose": "any"
+    }
+  ]
+}
